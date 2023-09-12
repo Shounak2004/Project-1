@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    font-family: 'Bruno Ace', cursive;
+    text-decoration: none;
+}
+:root{
+    --background_color: #35155D;
+    --main_color: #512B81;
+    --sec_color: #4477CE;
+    --p_color: #8CABFF;
+}
+body{
+    animation-name: background_animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.navBar{
+    background-color: orange;
+    border-radius: 15px;
+}
+#navLogo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.nav_item{
+    display: flex;
+    align-items: center;
+    color: var(--main_color);
+}
+#nav_option li{
+    margin-right: 8px;
+    margin-left: 70px;;
+}
+#company_name{
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--background_color);
+    font-size: 3rem;
+}
+#company_name span{
+    color: orange;
+    font-size: 5rem;
+}
+.main_head{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+.main_head img{
+    width: 250px;
+    display: flex;
+    height: 250px;
+    border: 1.5px solid  gray;
+    margin-top: 5px;
+    margin-right: 5px;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    background-color: orange;
+    padding: 5px;
+}
+#name1{
+    text-align: center;
+}
+#name1 span{
+    color: var(--main_color);
+    font-size: 2.5rem;
+}
+#service{
+    color: white;
+}
+#service span{
+    color: black;
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.products{
+    /* border: 2px solid black; */
+    display: flex;
+    padding: 50px;
+    justify-content: space-evenly;
+}
+.item{
+    /* border: 2px solid red; */
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    background-color: orange;
+    color: white;
+    font: bold;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.item img{
+    border-radius: 50%;
+}
+.item p{
+    margin-top: 10px;
+}
+#item2{
+    border: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+#item2 img{
+    width: 400px;
+}
+#item2 p{
+    margin-top: 0px;
+}
+.book_now_button{
+    background-color: #4477CE;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+#item3{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+#more_info{
+    color: beige;
+    text-align: end;
+    padding-right: 20px;
+}
+#more_info span{
+    font-size: 5rem;
+    color: var(--background_color);
+}
+#more_info #arrow{
+    color: red;
+}
+@keyframes background_animation {
+    from{background-image: url(background1_img.png);
+    background-repeat: no-repeat;
+background-size: cover;}
+    to{background-image: url(background2_img.png);
+    background-repeat: no-repeat;
+background-size: cover;}
+}
+#Download_header{
+    color: white;
+}
+.primary_footer{
+    padding: 10px;
+}
+.primary_footer img{
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+}
+.secondary_footer{
+    color: white;
+    text-align: center;
+}
